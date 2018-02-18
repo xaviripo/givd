@@ -40,3 +40,23 @@ float Triangle::obteAngle(int id_vertex) {
         / glm::l2Norm(vec1_small)
     );
 }
+
+void Triangle::traslada(glm::vec3 desplazament) {
+    glm::vec4 desp = glm::vec4(desplazament[0], desplazament[1], desplazament[2], 0);
+
+    for(char i=0; i<3; i++) {
+        vertexs[i] += desp;
+    }
+}
+
+void Triangle::escala(glm::vec3 factor_escalat) {
+    for(char i=0; i<3; i++) {
+        for(char j=0; j<3; j++) {
+            vertexs[i][j] *= factor_escalat[j];
+        }
+    }
+}
+
+void Triangle::rota(float radians, glm::vec3 punt_rotacio, glm::vec3 eix_rotacio) {
+
+}

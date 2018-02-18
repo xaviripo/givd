@@ -3,8 +3,7 @@
 
 #include "figura.h"
 
-class Triangle : public Figura
-{
+class Triangle : public Figura {
     glm::vec4 vertexs[3];
 public:
     Triangle(glm::vec4, glm::vec4, glm::vec4);
