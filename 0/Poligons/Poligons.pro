@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += \
     main.cpp \
-    figura.cpp
+    figura.cpp \
+    triangle.cpp
 
 HEADERS += \
     glm/core/_detail.hpp \
@@ -130,4 +131,5 @@ HEADERS += \
     glm/virtrev/xstream.hpp \
     glm/ext.hpp \
     glm/glm.hpp \
-    figura.h
+    figura.h \
+    triangle.h
